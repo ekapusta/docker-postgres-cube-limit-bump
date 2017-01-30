@@ -1,4 +1,4 @@
-FROM postgres:latest
+FROM postgres:9.5
 
 RUN apt-get update \
   && apt-get install --assume-yes wget unzip gcc make libreadline-dev postgresql-server-dev-$PG_MAJOR bison flex \
